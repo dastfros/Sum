@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <h1>Введите два числа:</h1>
+    <form id="averageForm">
+      <label for="num1">Первое число:</label>
+      <input type="number" id="num1" required />
+
+      <label for="num2">Второе число:</label>
+      <input type="number" id="num2" required />
+      <button type="button" onclick="calculateAverage()">
+        Рассчитать среднее
+      </button>
+    </form>
+    <div id="result"></div>
+    <h1>Введите числа:</h1>
+    <form id="remainderForm">
+      <label for="num1">Первое значение</label>
+      <input type="number" id="num1" required />
+
+      <label for="num2">Второе значение</label>
+      <input type="number" id="num2" required />
+      <button type="button" onclick="calculateRemainder()">
+        Рассчитать остаток
+      </button>
+      <div id="sum"></div>
+    </form>
+    <h1>Введите время:</h1>
+    <form id="timeForm">
+      <label for="inputTime">Время:</label>
+      <input
+        type="text"
+        id="inputTime"
+        placeholder="Например, 7:45 pm"
+        required
+      />
+
+      <button type="button" onclick="convertTime()">Преобразовать</button>
+    </form>
+    <div id="результат"> </div>
+    <h1>Високосный год </h1>
+    <label for="yearInput">Enter a year:</label>
+    <input type="num" id="yearInput" min="0" step="1" placeholder="Enter a year">
+    <button onclick="checkLeapYear()">Check</button>
+    <p id="res"></p>
+    
+
+    <h1>Уровнение</h1>
+    <label for="aInput">Введите значение'a':</label>
+    <input type="nu" id="aInput" placeholder="Enter 'a'">
+
+    <label for="bInput">Введите значение 'b':</label>
+    <input type="nu" id="bInput" placeholder="Enter 'b'">
+
+    <button onclick="solveEquation()">Solve</button>
+    <p id="re"></p>
+
+    <h1>Расчет сдачи</h1>
+    <label for="priceRubles">Введите цену в рублях:</label>
+    <input type="number" id="priceRubles" placeholder="рубли">
+
+    <label for="priceKopecks">Введите цену в копейках:</label>
+    <input type="number" id="priceKopecks" placeholder="копейки">
+
+    <label for="paidRubles">Введите сумму оплаты в рублях:</label>
+    <input type="number" id="paidRubles" placeholder="рубли">
+
+    <label for="paidKopecks">Введите сумму оплаты в копейках:</label>
+    <input type="number" id="paidKopecks" placeholder="копейки">
+
+    <button onclick="calculateChange()">Расчет сдачи</button>
+    <p id="сдача"></p>
+    
+    <h1>Мороженное</h1>
+    <label for="iceCreamCount">Введите количество шариков мороженного:</label>
+    <input type="number" id="iceCreamCount" placeholder="количество шариков">
+
+    <button onclick="checkIceCreamPurchase()">Расчет</button>
+    <p id="решение"></p>
+  </body>
+</html>
